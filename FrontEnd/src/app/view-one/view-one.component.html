@@ -1,0 +1,27 @@
+<div>
+  <form #form="ngForm" (ngSubmit)="getCustomer(form.value)">
+    <label >ID</label>
+    <input type="text" name="id" ngModel>
+    <button type="submit">Get</button>
+  </form>
+</div>
+<div *ngIf="view=='yes'">
+  <table>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Username</th>
+      <th>Password</th>
+      <th>ImgUrl</th>
+    </tr>
+    <tr >
+      <td>{{customer.id}}</td>
+      <td>{{customer.name}}</td>
+      <td>{{customer.email}}</td>
+      <td>{{customer.username}}</td>
+      <td>{{customer.password}}</td>
+      <td>{{customer.imgUrl}}</td>
+    </tr>
+  </table>
+</div>

@@ -1,0 +1,60 @@
+
+<div>
+  <button (click)="makeit()">Get All</button>
+  <div   *ngIf="show=='yes' else elseblock">
+    <app-view-all></app-view-all>
+  </div>
+
+  <ng-template #elseblock>
+
+  </ng-template>
+  <button (click)="hideit()">Hide</button>
+</div>
+
+<div>
+  <button (click)="makeit1()">GetOne</button>
+  <div *ngIf="show1=='yes' else elseblock1">
+    <app-view-one></app-view-one>
+  </div>
+  <ng-template #elseblock1>
+
+  </ng-template>
+  <button (click)="hideit1()">Hide</button>
+</div>
+
+
+<div>
+  <button (click)="makeit2()">AddOne</button>
+  <div *ngIf="show2=='yes' else elseblock2">
+    <app-add-one></app-add-one>
+  </div>
+  <ng-template #elseblock2>
+
+  </ng-template>
+  <button (click)="hideit2()">Hide</button>
+</div>
+
+<div>
+  <button (click)="makeit3()">UpdateOne</button>
+  <div *ngIf="show3=='yes' else elseblock3">
+    <app-update-one></app-update-one>
+  </div>
+  <ng-template #elseblock3>
+
+  </ng-template>
+  <button (click)="hideit3()">Hide</button>
+</div>
+
+<div>
+  <button (click)="makeit4()">DeleteOne</button>
+  <div *ngIf="show4=='yes' else elseblock4">
+    <app-delete-one></app-delete-one>
+  </div>
+  <ng-template #elseblock4>
+
+  </ng-template>
+  <button (click)="hideit4()">Hide</button>
+</div>
+
+
+

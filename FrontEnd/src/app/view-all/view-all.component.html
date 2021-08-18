@@ -1,0 +1,20 @@
+<div>
+  <table>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Username</th>
+      <th>Password</th>
+      <th>ImgUrl</th>
+    </tr>
+    <tr *ngFor="let d of customers">
+      <td>{{d.id}}</td>
+      <td>{{d.name}}</td>
+      <td>{{d.email}}</td>
+      <td>{{d.username}}</td>
+      <td>{{d.password}}</td>
+      <td>{{d.imgUrl}}</td>
+    </tr>
+  </table>
+</div>

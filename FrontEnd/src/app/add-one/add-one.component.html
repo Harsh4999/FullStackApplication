@@ -1,0 +1,26 @@
+<div>
+  <form #addForm="ngForm" (ngSubmit)="onAddCustomer(addForm)">
+    <label >Id</label>
+    <input type="text" name="id" ngModel>
+    <br>
+    <label >Name</label>
+    <input type="text" name="name" ngModel>
+    <br>
+    <label >Username</label>
+    <input type="text" name="username" ngModel>
+    <br>
+    <label >Password</label>
+    <input type="text" name="password" ngModel>
+    <br>
+    <label >Email</label>
+    <input type="text" name="email" ngModel>
+    <br>
+    <label >ImgUrl</label>
+    <input type="text" name="imgUrl" ngModel>
+    <br>
+    <button type="submit">submit</button>
+  </form>
+</div>
+<div *ngIf="view=='yes'">
+  <p>Added Succesfully</p>
+</div>

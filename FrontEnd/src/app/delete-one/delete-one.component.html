@@ -1,0 +1,13 @@
+<div>
+  <div>
+    <form #form="ngForm" (ngSubmit)="onDeleteCustomer(form.value.id)">
+      <label >ID</label>
+      <input type="text" name="id" ngModel>
+      <button type="submit">Delete</button>
+    </form>
+  </div>
+</div>
+
+<div *ngIf="viewOnDelete=='yes'">
+  <p>Record Deleted</p>
+</div>
