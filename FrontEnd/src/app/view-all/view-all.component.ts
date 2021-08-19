@@ -10,6 +10,7 @@ import { NgForm } from '@angular/forms';
 })
 export class ViewAllComponent implements OnInit {
   public customers: Customer[] = [];
+  public c:number=0;
   constructor(private customerService:CustomerService) { }
 
   ngOnInit(): void {
@@ -25,5 +26,8 @@ export class ViewAllComponent implements OnInit {
         alert(error.message);
       }
     );
+  }
+  increase(){
+    this.c = this.c+1;
   }
 }
